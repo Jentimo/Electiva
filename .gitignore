@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
@@ -34,3 +35,16 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+=======
+# generated files
+target/
+generated/
+
+# dependencies
+Dependencies.toml
+
+# config files
+Config.toml
+# the config files used for testing, Uncomment the following line if you want to commit the test config files
+#!**/tests/Config.toml
+>>>>>>> a827d0209a74e41c511ebfd0fcaa0b8adcd64705
