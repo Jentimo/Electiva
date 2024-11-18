@@ -30,18 +30,9 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Inicio',
-          tabBarIcon: ({ color }) => (
-            <FontAwesome name="home" size={24} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="Registro"
-        options={{
           title: 'Registro',
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="clipboard" size={24} color={color} />
+            <FontAwesome name="home" size={24} color={color} />
           ),
         }}
       />
