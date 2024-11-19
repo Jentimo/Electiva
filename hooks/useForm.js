@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 //vease que enviadmos los valores iniciales y mandamos las reglas de validacion
-// del formulario
+// del formulario, asi este hook podra manejar la logica de diferentes formularios
 const useForm = (initialValues, validationRules) => {
   const [values, setValues] = useState(initialValues);
   const [errors, setErrors] = useState({});
@@ -25,7 +25,7 @@ const useForm = (initialValues, validationRules) => {
     }
     setErrors({
       ...errors,
-      [name]: '', // limpia los errores cuando esta cambiando el valir
+      [name]: '', // limpia los errores cuando esta cambiando el valor
     });
   };
 
@@ -52,6 +52,7 @@ const useForm = (initialValues, validationRules) => {
   };
   //funcion para gestionar el submit
   const handleSubmit = (callback) => () => {
+    //si no hay errores en validate hace el llamado al callback
     if (validate()) {
       callback(values);
     }

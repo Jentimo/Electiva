@@ -1,3 +1,4 @@
+//layout base como lo muestra la documentacion de expo
 import React from 'react';
 import { Stack } from 'expo-router';
 

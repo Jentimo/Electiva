@@ -1,3 +1,4 @@
+//InputField que es mayormente de texto justamente
 import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';

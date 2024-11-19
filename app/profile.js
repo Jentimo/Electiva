@@ -1,11 +1,12 @@
-// app/profile/ProfileScreen.tsx
-
+// app/profile.js
+//pantalla para simulacion de los datos del perfil
 import { View, Text, StyleSheet } from 'react-native';
 import { Link, Stack, useRouter } from 'expo-router';
 import { useLocalSearchParams } from 'expo-router';
 export default function ProfileScreen() {
+  // como es una simulacion decidi usar los parametros locales para mostrar
+  //  en los text
     const { userData } = useLocalSearchParams();
-    console.log(userData);
     const Data=JSON.parse(userData);
   return (
     <>

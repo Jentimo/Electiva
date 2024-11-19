@@ -1,4 +1,5 @@
-import { View, StyleSheet } from "react-native"; // Corrected import statement
+//Screen para los stacks
+import { View, StyleSheet } from "react-native";
 
 export function Screen({ children }) {
   return (

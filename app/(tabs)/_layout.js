@@ -1,6 +1,8 @@
-import { Tabs } from 'expo-router';
-import { FontAwesome } from '@expo/vector-icons';
-import { StyleSheet } from 'react-native';
+//layout para los tab con una configuracion que se pueda ver bien tanto en Android como en IOS
+
+import { Tabs } from "expo-router";
+import { FontAwesome } from "@expo/vector-icons";
+import { StyleSheet } from "react-native";
 export default function TabLayout() {
   return (
     <Tabs
@@ -8,29 +10,30 @@ export default function TabLayout() {
         headerShown: false,
         tabBarStyle: {
           height: 70,
-          backgroundColor: '#f8f8f8',
+          backgroundColor: "#f8f8f8",
           borderTopWidth: 2,
-          borderTopColor: '#e0e0e0',
+          borderTopColor: "#e0e0e0",
           borderRadius: 15,
-          position: 'absolute',
+          position: "absolute",
           bottom: 0,
           left: 0,
           right: 0,
           elevation: 5,
-          shadowColor: '#000',
+          shadowColor: "#000",
           shadowOffset: { width: 0, height: 2 },
           shadowOpacity: 0.1,
           shadowRadius: 4,
         },
-        tabBarActiveTintColor: 'red',
-        tabBarInactiveTintColor: 'gray', // Color for inactive tabs
+        tabBarActiveTintColor: "red",
+        tabBarInactiveTintColor: "gray",
         tabBarLabelStyle: styles.tabLabel,
-        tabBarIconStyle: styles.tabIcon, // Custom styles for icons
-      }}>
+        tabBarIconStyle: styles.tabIcon,
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Registro',
+          title: "Registro",
           tabBarIcon: ({ color }) => (
             <FontAwesome name="home" size={24} color={color} />
           ),
@@ -43,9 +46,9 @@ export default function TabLayout() {
 const styles = StyleSheet.create({
   tabLabel: {
     fontSize: 14,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   tabIcon: {
-    marginBottom: 5, // Espaciado inferior para los íconos
+    marginBottom: 5,
   },
 });
