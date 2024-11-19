@@ -16,8 +16,8 @@ export default function TabLayout() {
           bottom: 0,
           left: 0,
           right: 0,
-          elevation: 5, // For Android shadow
-          shadowColor: '#000', // For iOS shadow
+          elevation: 5,
+          shadowColor: '#000',
           shadowOffset: { width: 0, height: 2 },
           shadowOpacity: 0.1,
           shadowRadius: 4,
